@@ -1,1 +1,16 @@
 Currently working on setting up the repository. This should shape up shortly, guys.
+
+Here are some useful commands:
+git-init(1) to create a new repository.
+git-show-branch(1) to see where you are.
+git-log(1) to see what happened.
+git-checkout(1) and git-branch(1) to switch branches.
+git-add(1) to manage the index file.
+git-diff(1) and git-status(1) to see what you are in the middle of doing.
+git-commit(1) to advance the current branch.
+git-reset(1) and git-checkout(1) (with pathname parameters) to undo changes.
+git-merge(1) to merge between local branches.
+git-rebase(1) to maintain topic branches.
+git-tag(1) to mark known point.
+
+I would suggest a GUI though, unless you are a fan of the command line.
