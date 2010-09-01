@@ -15,5 +15,12 @@ I would suggest a GUI though, unless you are a fan of the command line.
 Here is roughly what I've been doing in Cola (Gnome Git GUI)
 	Open Cola
 	*Checkout* the branch that I'm working on
-	Make my file changes (oh, and save them)
+	*Pull* changes to ensure you have the most up to date copy
+	Make your file changes (oh, and save them)
+	*Stage* the changes
+	Enter a good commit message (describe the changes...well)
+	*Commit* the changes
+	*Push* the changes
+	Go to the Wiki for that module and update what's going on with it.
+	
 	
