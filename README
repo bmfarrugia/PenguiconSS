@@ -20,6 +20,8 @@ This is my basic work flow:
 		(use whatever IDE you are comfortable with to edit files)
 	* When I am happy with my progress (I do this whenever I wrap for the evening), commit my changes
 		git commit -am 'commit message here (what did you do today)'
+	* I usually immediately do a push to the remote as well. I pretty much never commit changes I don't want to put out on the repo, so I immediately shove them up there
+		git push
 
 	* After a while, you have a tested unit that seems to work... You have both unit tested and integration tested it. Now it is time to merge the work. You can't actually do so, though. You can request that it be merged (so we get a last minute check to make sure there are no fuckups). Do this on the website by going to the correct branch and clicking "Pull Request". A tutorial on how to do this is here:  http://help.github.com/pull-requests/	
 
