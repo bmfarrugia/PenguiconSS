@@ -11,16 +11,19 @@ Here are some useful commands:
 	git-rebase(1) to maintain topic branches.
 	git-tag(1) to mark known point.
 
-I would suggest a GUI though, unless you are a fan of the command line.
-Here is roughly what I've been doing in Cola (Gnome Git GUI)
-	Open Cola
-	*Checkout* the branch that I'm working on
-	*Pull* changes to ensure you have the most up to date copy
-	Make your file changes (oh, and save them)
-	*Stage* the changes
-	Enter a good commit message (describe the changes...well)
-	*Commit* the changes
-	*Push* the changes
-	Go to the Wiki for that module and update what's going on with it.
-	
+This is my basic work flow:
+	* Create a branch for the project I'll be working on for the forseeable future (in this case, it is CMS-Jer).
+		git branch CMS-Jer
+	* Switch to my branch
+		git checkout CMS-Jer
+	* Make my edits
+		(use whatever IDE you are comfortable with to edit files)
+	* When I am happy with my progress (I do this whenever I wrap for the evening), commit my changes
+		git commit -am 'commit message here (what did you do today)'
+	* I usually immediately do a push to the remote as well. I pretty much never commit changes I don't want to put out on the repo, so I immediately shove them up there
+		git push
+
+	* After a while, you have a tested unit that seems to work... You have both unit tested and integration tested it. Now it is time to merge the work. You can't actually do so, though. You can request that it be merged (so we get a last minute check to make sure there are no fuckups). Do this on the website by going to the correct branch and clicking "Pull Request". A tutorial on how to do this is here:  http://help.github.com/pull-requests/	
+
+
 We will go over this at some point, to make sure we have it right. In the beginning, I have to remember to back up regularly for when we inevitably break things.
