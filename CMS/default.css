@@ -1,0 +1,278 @@
+body {
+	font-family: times new roman, serif;
+	font-size: 12px;
+	background-color: #ffffff;
+	color: #000000;
+	background-image: url(/);
+	background-repeat: repeat;
+	background-position: center top;
+	background-attachment: notfixed;
+}
+
+/*******************************************
+ * Basic Layout Containers (as IDs)
+ *******************************************/
+/* Overall Container */
+#container {
+	border-width: 2px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 800px;
+}
+/* This is for the banner up top */
+#header {
+	text-align: center;
+	margin: 0px 0px 0px 0px;
+}
+/* Menubar should be treated as an unordered list */
+#menubar{
+	font-size: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 800px;
+	height: 30px;
+	padding: 3px;
+	margin: 3px;
+}
+	/* Dropdown Menu CSS stuff */
+	#menu, #menu ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	#menu a {
+		display: block;
+		color: red;
+		text-decoration: none;
+		width: 117px;	/* bar width divided by # of items */
+	}
+	#menu a:hover {
+		text-decoration: underline;
+	}
+	#menu li {
+		background-color: blue;
+		padding: 1px;
+		margin: 1px;
+		float: left;
+		width: 128px;
+	}
+	#menu li ul {
+		text-align: left;
+		font-size: 22px;
+		position: absolute;
+		padding: 1px;
+		margin: 1px;
+		width: 128px;
+		left: -999em;
+	}
+	#menu li:hover ul {
+		left: auto;
+	}
+/* The content or main area */
+#content {
+	text-align: justify;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+}
+/* Floater at the page bottom */
+#footer {
+	clear: both;
+  	font-size: 10px;
+	color: #000000;
+	text-align: center;
+	line-height: 14px;
+}
+
+/*******************************************
+ * Modifying standard tags (Jer-ifying) 
+ *******************************************/
+/* General link appearance */
+a, a:visited {
+	color: #333366;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/* Modifying blockquote */
+blockquote {
+	font-style: italic;
+	font-size: 14px;
+	border-left: 2px solid #333366;
+	padding: 2px;
+}
+
+/* Adding the ability to cite my blockquote references */
+blockquote.quoteref {
+	text-align: right;
+	font-style: bold;
+}
+
+/* I like my paragraphs indented */
+p {
+	text-indent: 20px;
+}
+
+/* Images need padding */
+img {
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+
+/*******************************************
+ * New 'tags' for divs and spans
+ *******************************************/
+.page_title {
+	font-size: 34px;
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 4px;
+}
+.page_subtitle {
+	font-size: 22px;
+	text-align: center;
+	padding-bottom: 4px;
+}
+.section_header {
+	font-size: 22px;
+	text-align: left;
+	line-height: 30px;
+}
+.description {
+	font-style: italic;
+	font-size: 16px;
+	margin-left: 20px;
+}
+.entrydate {
+	font-size: 12px;
+	color:  #aaaaee;
+	text-align: right;
+	font-style: italic;
+}
+
+/* Similar to blockquote, but for inset conversation diversions */
+.sidebar {
+	font-style: italic;
+	border-left: 2px solid #333366;
+	border-right: 2px solid #333366;
+	margin-right: 40px;
+	margin-left: 40px;
+	padding: 5px;
+}
+
+/* Colored background block for items in the side menu */
+.sidemenuitem {
+	margin-top: 3px;
+	margin-bottom: 7px;
+	padding: 4px;
+	background-color: #aaaaee;
+}
+
+/* For line quotes */
+.quote {
+	font-size: 18px;
+	font-style: italic;
+}
+.quoteref {
+	font-size: 16px;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: right;
+}
+
+/* For footnotes and callbacks */
+.footnote {
+	font-size: 12px;
+	font-color: #000000;
+	font-align: left;
+	line-height: 18px;
+}
+
+
+/*******************************************
+ * Externals - From other sites for inserts
+ *******************************************/
+/* For Last.fm */
+table.lfmWidget202958342defec013bbba04a752e8dca td {margin:0 !important;padding:0 !important;border:0 !important;}table.lfmWidget202958342defec013bbba04a752e8dca tr.lfmHead a:hover {background:url(http://cdn.last.fm/widgets/images/en/header/chart/recenttracks_regular_grey.png) no-repeat 0 0 !important;}table.lfmWidget202958342defec013bbba04a752e8dca tr.lfmEmbed object {float:left;}table.lfmWidget202958342defec013bbba04a752e8dca tr.lfmFoot td.lfmConfig a:hover {background:url(http://cdn.last.fm/widgets/images/en/footer/grey.png) no-repeat 0px 0 !important;;}table.lfmWidget202958342defec013bbba04a752e8dca tr.lfmFoot td.lfmView a:hover {background:url(http://cdn.last.fm/widgets/images/en/footer/grey.png) no-repeat -85px 0 !important;}table.lfmWidget202958342defec013bbba04a752e8dca tr.lfmFoot td.lfmPopup a:hover {background:url(http://cdn.last.fm/widgets/images/en/footer/grey.png) no-repeat -159px 0 !important;}
+
+/******************************************************************
+ * Stuff that I'm going to delete
+.dict_entry {
+	text-align: left;
+	font-size: 18px;
+	font-weight: bold;
+}
+.dict_define {
+	text-align: left;
+	font-size: 14px;
+	font-weight: normal;
+	text-decoration: italic;
+	margin-left: 20px;
+}
+.article_data{
+	margin-left: 22px;
+	font-style: none;
+}
+table.mainmenu {
+	width: 520px;
+	border-bottom: 2px solid #333366;
+}
+table.bottommenu {
+	width: 520px;
+}
+td.mainmenu, td.bottommenu {
+	font-size:  18px;
+	width: 85px;
+	line-height: 20px;
+	text-align: left;
+	vertical-align: bottom;
+	padding: 0px;
+}
+td.current, td.current:hover {
+	font-size:  22px;
+	font-weight: bold;
+	background-color: #bbbbee;
+	width: 85px;
+	line-height: 20px;
+	text-align: left;
+	vertical-align: bottom;
+	padding: 0px;
+}
+table.content {
+	width: 520px;
+	border-bottom: 2px solid #333366;
+}
+
+td.content {
+	font-size:  16px;
+	font-color: #000000;
+	vertical-align: top;
+	padding: 2px;
+
+}
+td.wcontent {
+	font-size:  16px;
+	font-color: #000000;
+	text-align: justify;
+	vertical-align: top;
+	padding: 2px;
+
+}
+td.two_col {
+	width: 260px;
+	font-size:  16px;
+	font-color: #000000;
+	vertical-align: top;
+	padding: 2px;
+}
+copyright {
+	font-size: 12px;
+	font-color: #000000;
+	font-align: center;
+	line-height: 18px;
+}*/
