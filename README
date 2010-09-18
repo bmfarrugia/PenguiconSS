@@ -18,6 +18,10 @@
   * git checkout CMS-Jer
 * Fetch updates (just in case)
   * git fetch
+* If the upstream branches have edits you need to bring forward (as in, a branch higher up than yours has new stuff you don't) then you need to do the following:
+  * git remote add NAME LINK  (where name is a repo name and link is the url for the repo...)
+    * Note: If you've done this in the past, you don't need to again
+  * git fetch NAME BRANCH (where name is the name you added, and branch is the name of the upstream branch)
 * Make my edits
   * (use whatever IDE you are comfortable with to edit files)
 * When I am happy with my progress, commit my changes (I do this whenever I wrap for the evening, usually)
