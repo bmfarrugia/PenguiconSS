@@ -1,29 +1,42 @@
-Here are some useful commands:
-	git-init(1) to create a new repository.
-	git-show-branch(1) to see where you are.
-	git-log(1) to see what happened.
-	git-checkout(1) and git-branch(1) to switch branches.
-	git-add(1) to manage the index file.
-	git-diff(1) and git-status(1) to see what you are in the middle of doing.
-	git-commit(1) to advance the current branch.
-	git-reset(1) and git-checkout(1) (with pathname parameters) to undo changes.
-	git-merge(1) to merge between local branches.
-	git-rebase(1) to maintain topic branches.
-	git-tag(1) to mark known point.
+### Here are some useful commands:
+* git-init(1) to create a new repository.
+* git-show-branch(1) to see where you are.
+* git-log(1) to see what happened.
+* git-checkout(1) and git-branch(1) to switch branches.
+* git-add(1) to manage the index file.
+* git-diff(1) and git-status(1) to see what you are in the middle of doing.
+* git-commit(1) to advance the current branch.
+* git-reset(1) and git-checkout(1) (with pathname parameters) to undo changes.
+* git-merge(1) to merge between local branches.
+* git-rebase(1) to maintain topic branches.
+* git-tag(1) to mark known point.
 
-This is my basic work flow:
-	* Create a branch for the project I'll be working on for the forseeable future (in this case, it is CMS-Jer).
-		git branch CMS-Jer
-	* Switch to my branch
-		git checkout CMS-Jer
-	* Make my edits
-		(use whatever IDE you are comfortable with to edit files)
-	* When I am happy with my progress (I do this whenever I wrap for the evening), commit my changes
-		git commit -am 'commit message here (what did you do today)'
-	* I usually immediately do a push to the remote as well. I pretty much never commit changes I don't want to put out on the repo, so I immediately shove them up there
-		git push
+### This is my basic work flow:
+* Create a branch for the project I'll be working on for the forseeable future (in this case, it is CMS-Jer).
+  * git branch CMS-Jer
+* Switch to my branch
+  * git checkout CMS-Jer
+* Fetch updates (just in case)
+  * git fetch
+* Make my edits
+  * (use whatever IDE you are comfortable with to edit files)
+* When I am happy with my progress, commit my changes (I do this whenever I wrap for the evening, usually)
+  * git commit -am 'commit message here (what did you do today)'
+* I usually immediately do a push to the remote as well. I pretty much never commit changes I don't want to put out on the repo, so I immediately shove them up there
+  * git push
 
-	* After a while, you have a tested unit that seems to work... You have both unit tested and integration tested it. Now it is time to merge the work. You can't actually do so, though. You can request that it be merged (so we get a last minute check to make sure there are no fuckups). Do this on the website by going to the correct branch and clicking "Pull Request". A tutorial on how to do this is here:  http://help.github.com/pull-requests/	
-
-
+* After a while, you have a tested unit that seems to work... You have both unit tested and integration tested it. Now it is time to merge the work. You can't actually do so, though. You can request that it be merged (so we get a last minute check to make sure there are no fuckups). 
+  * First, make sure you have done a *git push*
+  * Go to github's website
+  * Go to the correct branch
+  * Click "Pull Request" 
+  * A tutorial on how to do this is here:  http://help.github.com/pull-requests/	
 We will go over this at some point, to make sure we have it right. In the beginning, I have to remember to back up regularly for when we inevitably break things.
+
+### Merging the branches:
+This is mostly for my reference, since I keep forgetting how to do this (there is a handy link for this too (http://help.github.com/pull-requests/ ).
+* git checkout master
+* git remote add NAME LINK
+* git fetch NAME
+* git merge BRANCH
+* git push origin master
